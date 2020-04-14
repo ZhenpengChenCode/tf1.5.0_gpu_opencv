@@ -24,5 +24,10 @@ RUN pip install wheel
 
 RUN pip install --upgrade pip
 
+RUN apt-get update \
+    && apt-get install -y libsm6 \
+    libxext6 \
+    libxrender-dev
+    
 RUN pip install opencv-python
 RUN pip install opencv-contrib-python
