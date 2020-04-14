@@ -20,7 +20,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install numpy
-RUN pip install whell
+RUN pip install wheel
 
 RUN pip install --upgrade pip
 
