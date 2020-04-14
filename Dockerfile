@@ -8,7 +8,6 @@ RUN apt-get update \
         wget \
         unzip \
         yasm \
-        wheel \
         pkg-config \
         libswscale-dev \
         libtbb2 \
@@ -21,6 +20,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install numpy
+RUN pip install whell
 
 RUN pip install --upgrade pip
 
